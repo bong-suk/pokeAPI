@@ -10,7 +10,6 @@ export default function Search() {
   const reg = getRegExp(param);
 
   const pokemon = useSelector(selectPokemonByRegExp(reg));
-  console.log(pokemon);
   return (
     <>
       {pokemon.map((el) => (
